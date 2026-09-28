@@ -1,0 +1,14 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.benchprep.com/pricing
+sources:
+- https://www.benchprep.com/pricing
+- https://blog.benchprep.com/adaptive-e-learning-how-leverage-content-for-a-personalized-study-plan
+name: BenchPrep pricing
+audience: business-product
+pricing_basis: negotiated
+plans:
+- name: Custom
+  price_text: Contact sales
+docs: https://www.benchprep.com/pricing

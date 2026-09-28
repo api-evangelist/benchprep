@@ -1,23 +1,97 @@
 aid: benchprep
+
 name: BenchPrep
-description: 'BenchPrep is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/613a53a94111286b54741135/617ae672da9be9e6152bc7f7_opengraph%20image-home2.png
+
+description: BenchPrep provides a cloud‑based learning management system that helps organizations deliver certification training, exam preparation,
+  and continuing education. Their platform includes AI‑driven learning technology, reporting tools, content management, and integrations, serving
+  enterprises, associations, and educational institutions worldwide.
+
 url: https://raw.githubusercontent.com/api-evangelist/benchprep/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- LMS
+- Education
+- Training
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/benchprep-plans-pricing.yml
+- type: Conformance
+  url: conformance/benchprep-conformance.yml
+- type: SecurityTxt
+  url: well-known/benchprep-status-security.txt
+- type: WellKnown
+  url: well-known/benchprep-well-known.yml
+- type: Hosts
+  url: hosts/benchprep-hosts.yml
+- type: Vendors
+  url: vendors/benchprep-vendors.yml
+- type: TermsOfService
+  url: https://www.benchprep.com/terms-and-conditions
+- type: StatusPage
+  url: https://status.benchprep.com/
+- type: Security
+  url: https://www.benchprep.com/security
+- type: PrivacyPolicy
+  url: https://www.benchprep.com/privacy-policy
+- type: Login
+  url: https://benchprep.com/login
+- type: GettingStarted
+  url: https://blog.benchprep.com/getting-started-with-benchpreps-zoom-meetings-integration
+- type: DomainSecurity
+  url: security/benchprep-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.benchprep.com/
+- type: Blog
+  url: https://blog.benchprep.com/
+- type: Pricing
+  url: https://www.benchprep.com/pricing
+- type: Contact
+  url: https://www.benchprep.com/contact-us
+- type: Support
+  url: https://support.benchprep.com/home/
+
+apis:
+- name: BenchPrep API
+  description: API for BenchPrep platform, described in the Getting Started page.
+  humanURL: https://www.benchprep.com/get-started
+  baseURL: null
+  aid: benchprep:benchprep-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Getting Started page renders HTML with no machine‑readable OpenAPI spec.
+  evidence:
+  - url: https://www.benchprep.com/get-started
+    status: 200
+  checked: '2026-09-27'
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

@@ -1,0 +1,11 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://blog.benchprep.com/benchprep-achieves-soc-2-compliance
+sources:
+- https://blog.benchprep.com/benchprep-achieves-soc-2-compliance
+standards:
+- id: soc2
+  conforms: true
+  evidence: 'BenchPrep Achieves SOC 2 Compliance: A Major Milestone in Security and Trust'
+docs: https://blog.benchprep.com/benchprep-achieves-soc-2-compliance
